@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- 左上角图片 -->
+
+    <Button
+        android:id="@+id/bt_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/bt_homepage_sound_on" />
+    <!-- 右上角图片 -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/bt_yijian_selector" />
+
+    <!-- 中央主布局 -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/img_startpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/pic_startpage_logo" />
+
+        <LinearLayout
+            android:id="@+id/img_man_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/img_startpage"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_man_up" />
+
+            <Button
+                android:id="@+id/bt_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_woman_up" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_gif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_man_woman"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bt_gif_selector" />
+        
+        <Button
+            android:id="@+id/bt_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/bt_gif"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bt_more_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>
